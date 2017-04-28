@@ -12,7 +12,7 @@ print("""\
 | _|    /__/     \__\ /________||__|\__\  \______/  | _| `._____|
 
                                                                  
-the assHole productions
+
  """)
 target = (input("what's the victim ip?"))
 gatew = (input("what'S the gateway ip?"))
