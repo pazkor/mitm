@@ -1,6 +1,6 @@
+import os
+import sys
 import subprocess
-
-subprocess.call("ls",shell=True)
-
-output = subprocess.check_output("ls",shell=True)
-print(output)
+from main.py import
+os.system("arpspoof -i wlan1 -t {0} {1}".format(target,gatew))
+idle = (input("press when ready for echo"))
